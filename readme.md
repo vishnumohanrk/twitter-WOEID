@@ -4,7 +4,15 @@ Twitter uses Yahoo! WOEID for all of their Trends related API endpoints. But tha
 
 This NPM module offers methods to get WOEID of all locations that Twitter has trending topic information for.
 
-## Usage
+## Contents:
+
+[Methods](#available-methods)
+
+[Example](#example)
+
+[Using with Twit](#usage-with-twit)
+
+## Available Methods
 
 ```JS
 getSingleWOEID(cityName)
@@ -57,4 +65,16 @@ console.log(getAllWOEID('japan'));
   ...
   { name: 'Okayama', country: 'Japan', woeid: 90036018 },
 ];
+```
+
+## Usage with Twit
+
+Using destructuring
+
+```JS
+const [{ woeid }] = getSingleWOEID('chennai');
+
+twit.get('trends/place', { id: woeid })
+  .then(res => console.log(res.data[0]))
+  .catch(e => console.log(e));
 ```
