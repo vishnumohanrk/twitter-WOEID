@@ -1,0 +1,25 @@
+{
+  "name": "twitter-woeid",
+  "version": "1.0.0",
+  "description": "Get WOEID for locations that Twitter has trending topic information for.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "demo": "node demo.js"
+  },
+  "keywords": [
+    "Twitter API",
+    "Yahoo WOEID",
+    "Twitter WOEID",
+    "Twitter Trends",
+    "Twitter",
+    "WOEID"
+  ],
+  "author": "Vishnumohan R K",
+  "license": "ISC",
+  "repository": "https://github.com/vishnumohanrk/twitter-WOEID",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  }
+}
