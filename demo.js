@@ -8,5 +8,5 @@ console.log(getSingleWOEID('india'));
 
 console.log(getSingleWOEID('chicago'));
 
-const [{ woeid }] = getSingleWOEID('chennai');
+const { woeid } = getSingleWOEID('chennai');
 console.log(`* See the demo.js/readme *\nWOEID of Chennai: ${woeid}`);
