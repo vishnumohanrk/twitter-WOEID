@@ -1,6 +1,6 @@
 {
   "name": "twitter-woeid",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get WOEID for locations that Twitter has trending topic information for.",
   "main": "index.js",
   "scripts": {

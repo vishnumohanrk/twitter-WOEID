@@ -1,6 +1,8 @@
 # Twitter WOEID
 
-Twitter uses Yahoo! WOEID for all of their Trends related API endpoints. But that Yahoo! service has been [shutdown](https://developer.yahoo.com/boss/).
+## 1.0.3 Update - This package might not be useful - Instead use [trends/available](https://developer.twitter.com/en/docs/twitter-api/v1/trends/locations-with-trending-topics/api-reference/get-trends-available) endpoint directly.
+
+Twitter uses Yahoo! WOEID for all of their Trends related API endpoints. But that Yahoo! service has been [shutdown](https://developer.twitter.com/en/docs/twitter-api/v1/trends/locations-with-trending-topics/api-reference/get-trends-available).
 
 This NPM module offers methods to get WOEID of all locations that Twitter has trending topic information for.
 
