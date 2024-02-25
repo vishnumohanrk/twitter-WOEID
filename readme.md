@@ -16,21 +16,17 @@ This NPM module offers methods to get WOEID of all locations that Twitter has tr
 
 ## Available Methods
 
+Use this method for getting the WOEID of a City (Local Trends) or a Country (National Trends).
+
 ```JS
 getSingleWOEID(cityName)
 ```
 
-Use the above method for getting the WOEID of a City (Local Trends).
-
-Use the above method for getting the WOEID of a Country (National Trends).
+Use the this method for getting the WOEIDs of all cities (that Twitter has trending topic information for) of that country.
 
 ```JS
 getAllWOEID(countryName)
 ```
-
-Use the above method for getting the WOEIDs of all cities (that Twitter has trending topic information for) of that country.
-
-Each of the above methods returns an array of matching city/country.
 
 ## Example
 
@@ -41,7 +37,7 @@ console.log(getSingleWOEID('new york'));
 
 // RETURNS
 
-[{ name: 'New York', country: 'United States', woeid: 2459115 }];
+{ name: 'New York', country: 'United States', woeid: 2459115 };
 ```
 
 #### Country
@@ -51,7 +47,7 @@ console.log(getSingleWOEID('india'));
 
 // RETURNS
 
-[{ name: 'India', country: 'India', woeid: 23424848 }];
+{ name: 'India', country: 'India', woeid: 23424848 };
 ```
 
 #### All (Available) cities of a Country
@@ -74,7 +70,7 @@ console.log(getAllWOEID('japan'));
 Using destructuring
 
 ```JS
-const [{ woeid }] = getSingleWOEID('chennai');
+const { woeid } = getSingleWOEID('chennai');
 
 twit.get('trends/place', { id: woeid })
   .then(res => console.log(res.data[0]))
